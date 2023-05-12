@@ -521,7 +521,7 @@ a{
   height: 30%;
   }
   body{
-    background-attachment: center;
+    background-attachment: scroll;
   }
   #about{
     width: 80%;
