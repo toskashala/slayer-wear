@@ -1,0 +1,591 @@
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&family=Urbanist:wght@200&display=swap');
+* {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+   
+}
+
+body {
+  background-image: url(img/clouds.jpg);
+  background-color: rgb(255, 255, 255);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  font-size:1rem;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.header {
+  overflow: hidden;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  animation: opacity 2s;
+
+}
+@keyframes opacity {
+  0%{
+    opacity: 0;
+  }
+}
+
+.ribbon-header {
+  height: fit-content;
+  width: 100%;
+  padding-top: 10rem;
+  overflow: hidden;
+}
+
+.overlay-text {
+  text-overflow: ellipsis;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Rock Salt', cursive;
+  font-size: 4rem;
+  width: 100%;
+  height: fit-content;
+  font-weight: bold;
+  color: white;
+  animation: navigation 2s;
+  z-index: 1;
+}
+
+.ribbon-container {
+  height: fit-content;
+  display: inline-block;
+  animation: ribbonAnimation 3.5s linear infinite;
+}
+
+.background-text {
+  font-size: 40rem;
+  height: fit-content;
+  width: 100%;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.101);
+}
+
+.navbar {
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 2rem;
+  padding-right: 3rem;
+  z-index: 9999;
+  animation: head 2s;
+}
+@keyframes head {
+  0%{
+    opacity: 0;
+    margin-top: -10vh;
+  }
+}
+
+.logo img {
+  padding-top: 0.5rem;
+  width: 7rem;
+  height: 5rem;
+}
+
+.menu-toggle {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.hamburger {
+  z-index:9999;
+  width: 30px;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hamburger span {
+  width: 100%;
+  height: 3px;
+  background-color: black;
+  transition: transform 0.3s ease;
+}
+
+.menu {
+  position: fixed;
+  font-family: 'Rock Salt', cursive;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.854);
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.menu.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.menu li {
+  margin-bottom: 20px;
+}
+
+.menu li a {
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.menu li a:hover {
+  color: purple;
+}
+
+@keyframes ribbonAnimation {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+  
+  @keyframes navigation {
+    0%{
+        opacity: 0;
+        margin-left: -40vh;
+    }
+}
+
+#about{
+  word-wrap: break-word;
+  padding-left: 8%;
+  padding-right: 8%;
+  background-color: rgba(0, 0, 0, 0.539);
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  height: fit-content;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.about-info{
+  font-family: 'Urbanist', sans-serif;
+  font-size: 1.2em;
+  color: rgb(135, 135, 135);
+}
+#intro{
+  margin-bottom: 40px;
+  margin-top: 50px;
+  font-size: 3.5rem;
+}
+.thanks{
+  padding-block: 80px;
+  font-family: 'Rock Salt', cursive;
+  font-size: 2rem;
+  animation: gradient-animation 5s infinite;
+}
+
+
+@keyframes gradient-animation {
+  0% { color: red; }
+  20% { color: orange; }
+  40% { color: yellow; }
+  60% { color: green; }
+  80% { color: blue; }
+  100% { color: indigo; }
+}
+
+.title{
+  font-family: 'Rock Salt', cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.3rem;
+  height: fit-content;
+  color: rgba(255, 255, 255, 0.556);
+  position: relative;
+  padding: 0 10px;
+}
+
+#clothes{
+  height: fit-content;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+
+}
+.offers{
+  margin-bottom: 5rem;
+  display: flex;
+  width: 65%;
+  height: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#offer1{
+  background-color: rgba(0, 0, 0, 0.539);
+}
+
+#offer2{
+  color: rgba(255, 255, 255, 0.693);
+  font-family: 'Urbanist', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.offer{
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  transition: transform 0.2s ease-in-out;
+  width: 100%;
+  height: 25rem;
+  flex: 1;
+}
+
+
+.flipper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.front,
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.front {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.offer img{
+  width: 100%;
+  height: 25rem;
+}
+
+.back {
+  background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  transform: rotateY(180deg);
+}
+
+.offer:hover .flipper {
+  transform: rotateY(180deg);
+}
+.hidden{
+  opacity: 0;
+}
+
+#offer2 h2{
+  margin-top: 1rem;
+  font-size: 1.3rem;
+  color: rgb(132, 132, 220);
+}
+
+.cool-button {
+  margin-top: 2rem;
+  font-family: 'Rock Salt', cursive;
+  display: inline-block;
+  padding: 10px 25px;
+  background-color: rgba(255, 255, 255, 0.694);
+  color: black;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.cool-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.cool-button::after {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.cool-button:hover {
+  background-color: rgba(0, 0, 0, 0.657);
+  color: white;
+}
+
+.cool-button:hover::before {
+  left: 0;
+}
+
+.cool-button:hover::after {
+  top: 0;
+}
+
+#slayer{
+  width: 100%;
+  display: block;
+  margin-bottom: 0;
+}
+
+#slayer .offers{
+  margin-bottom: -5rem;
+}
+
+
+#main-footer {
+  overflow: hidden;
+  padding-bottom: 2rem;
+  width: 100%;
+  height: fit-content;
+  background-color: rgb(0, 0, 0);
+}
+#main-footer p a {
+  text-decoration: none;
+}
+
+#main-footer p {
+  color: rgba(255, 255, 255, 0.739);
+  padding-bottom: 2rem;
+  text-align: center; 
+  font-weight: 200;
+}
+
+.social-links {
+  list-style:none;
+  margin:0;
+  padding:0;
+  margin-bottom:1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.social-links li{
+  padding: 0.5rem;
+  display:inline-block;
+  margin:0 5px;
+  border-radius:3px;
+  box-shadow:0 4px 0 transparent;
+  -webkit-transition:all .3s ease-out;
+  transition:all .3s ease-out;
+}
+
+.social-links li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width:5rem;
+  height:5rem;
+  text-align:center;
+  color:black;
+  background:rgba(255, 255, 255, 0.847); 
+  border-radius:50%;
+  -webkit-transition:all .3s ease-out;
+  transition:all .3s ease-out;
+}
+a{
+  text-decoration: none;
+}
+
+.social-links li a:hover {
+  color: white; 
+  background-color: black;
+}
+#footer-title{
+  margin-bottom: 1rem;
+  padding-top: 2rem;
+}
+
+.fa{
+  font-size: 2rem;
+}
+
+#dev{
+  font-size: 0.9rem;
+}
+
+.link{
+  text-decoration: none;
+  color: rgb(148, 29, 148);
+}
+
+.link:hover{
+  color: rgb(147, 83, 147);
+}
+.about{
+  opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s, transform 1s;
+}
+.clothes{
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s, transform 1s;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+@media only screen and (max-width: 1194px) {
+ 
+  .offers{
+  width: 80%;
+  }
+
+
+}
+
+@media only screen and (max-width: 862px) {
+ 
+  .offers{
+  width: 90%;
+  }
+
+}
+
+@media only screen and (max-width: 750px) {
+ 
+  .offers{
+  display: block;
+  width: 60%;
+  margin-bottom: 3rem;
+  height: 30%;
+  }
+  body{
+    background-attachment: center;
+  }
+  #about{
+    width: 80%;
+  }
+
+  body{
+    font-size: 14px;
+  }
+  #intro{
+    font-size: 2rem;
+  }
+  .thanks{
+    font-size: 1.5rem;
+  }
+  #intro2{
+    font-size: 3rem;
+  }
+  #footer-title{
+    font-size: 2rem;
+  }
+
+  #offer2{
+    margin-top: -2rem;
+  }
+  #slayer #offer2{
+    margin-top: 0;
+  }
+  #offers7 #offer2{
+    margin-top: -6rem;
+  }
+
+}
+@media only screen and (max-width: 616px) {
+  .offers{
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 512px) {
+  .fa{
+    font-size: 1.5rem;
+  }
+  .social-links li a {
+    width: 4rem;
+    height: 4rem;
+  }
+  .overlay-text{
+    font-size: 3rem;
+  }
+  #intro2{
+    font-size: 2rem;
+  }
+  .offers{
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 384px) {
+  .offers{
+    width: 90%;
+  }
+}
+
+
+
+
+
+
+
