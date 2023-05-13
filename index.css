@@ -323,9 +323,7 @@ body {
 .offer:hover .flipper {
   transform: rotateY(180deg);
 }
-.flipper.flipped {
-  transform: rotateY(180deg);
-}
+
 #offer2 h2{
   margin-top: 1rem;
   font-size: 1.3rem;
@@ -525,6 +523,7 @@ a{
   height: 30%;
   margin-bottom: 3rem;
   }
+
  
   #about{
     width: 80%;
@@ -565,6 +564,9 @@ a{
 @media only screen and (max-width: 512px) {
   .fa{
     font-size: 1.5rem;
+  }
+  .flipper.flipped {
+    transform: rotateY(180deg);
   }
   #about{
     background-image: none;
