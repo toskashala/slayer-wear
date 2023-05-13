@@ -256,8 +256,8 @@ body {
 .offers{
   margin-bottom: 5rem;
   display: flex;
-  width: 65%;
-  height: 60%;
+  width: 50vw;
+  height: fit-content;
   margin-left: auto;
   margin-right: auto;
 }
@@ -570,17 +570,16 @@ a{
     background-position: center;
   }
 #clothes{
-  background-image: url(img/cropped\(2\).jpg);
-  background-size: contain;
-  background-repeat: repeat-y;
+  background-image: url(img/Royal.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 body{
-    background-attachment:scroll;
     background-color: black;
     background-image: none;
 
   }
-  .front,
+.front,
 .back {
   position: absolute;
   width: 100%;
