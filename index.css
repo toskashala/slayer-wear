@@ -565,9 +565,6 @@ a{
   .fa{
     font-size: 1.5rem;
   }
-  .flipper.flipped {
-    transform: rotateY(180deg);
-  }
   #about{
     background-image: none;
     background-color: black;
