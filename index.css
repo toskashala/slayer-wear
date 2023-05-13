@@ -524,10 +524,9 @@ a{
   #about{
     width: 80%;
   }
+
   body{
     font-size: 14px;
-    background-image: url(img/cropped\(1\).jpg);
-    background-size: cover;
 
   }
   #intro{
@@ -562,6 +561,28 @@ a{
 @media only screen and (max-width: 512px) {
   .fa{
     font-size: 1.5rem;
+  }
+  #about{
+    background-image: none;
+    background-color: black;
+    width: 100%;
+  }
+  header{
+    background-image: url(img/cropped.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+#clothes{
+  background-image: url(img/cropped\(2\).jpg);
+  background-size: contain;
+  background-repeat: repeat-y;
+}
+  body{
+    background-attachment:scroll;
+    background-color: black;
+    background-image: url(img/cropped\(2\).jpg);
+   
   }
   .social-links li a {
     width: 4rem;
