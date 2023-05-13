@@ -581,7 +581,7 @@ a{
   body{
     background-attachment:scroll;
     background-color: black;
-    background-image: url(img/cropped\(2\).jpg);
+    background-image: none;
    
   }
   .social-links li a {
