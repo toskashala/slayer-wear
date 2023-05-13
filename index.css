@@ -271,7 +271,12 @@ body {
   display: flex;
   flex-direction: column;
 }
-
+#offer3{
+  background-color: rgba(0, 0, 0, 0.539);
+  background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 
 .offer{
   cursor: pointer;
