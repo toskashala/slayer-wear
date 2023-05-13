@@ -580,6 +580,37 @@ body{
     background-image: none;
 
   }
+  .front,
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.front {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.offer img{
+  width: 100%;
+  height: 25rem;
+}
+
+
+.back {
+  background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  transform: rotateY(180deg);
+}
+
+.offer:hover .flipper {
+  transform: rotateY(180deg);
+}
+
   .social-links li a {
     width: 4rem;
     height: 4rem;
