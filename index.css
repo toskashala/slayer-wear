@@ -166,9 +166,16 @@ body {
   font-size: 1.5rem;
   text-decoration: none;
 }
+#offer3{
+  background-color: rgba(0, 0, 0, 0.539);
+  background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 
 .menu li a:hover {
-  color: purple;
+  
+  color: rgb(132, 132, 220);
 }
 
 @keyframes ribbonAnimation {
@@ -308,15 +315,10 @@ body {
     background-size: cover;
 }
 
-.offer img{
-  width: 100%;
-  height: 25rem;
-}
 .back {
   background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-  transform: rotateY(180deg);
 }
 
 .offer:hover .flipper {
@@ -468,11 +470,12 @@ a{
 
 .link{
   text-decoration: none;
-  color: rgb(148, 29, 148);
+  color: rgb(132, 132, 220);
+  font-family: 'Rock Salt', cursive;
 }
 
 .link:hover{
-  color: rgb(147, 83, 147);
+  color: hotpink;
 }
 .about{
   opacity: 0;
@@ -523,7 +526,6 @@ a{
 
   body{
     font-size: 14px;
-
   }
   #intro{
     font-size: 2rem;
@@ -570,7 +572,7 @@ a{
     background-position: center;
   }
 #clothes{
-  background-image: url(img/Royal.png);
+  background-image: url(img/Mirage.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -592,13 +594,6 @@ body{
     background-position: center;
     background-size: cover;
 }
-
-.offer img{
-  width: 100%;
-  height: 25rem;
-}
-
-
 .back {
   background-repeat: no-repeat;
     background-position: center;
