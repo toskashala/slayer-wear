@@ -256,8 +256,7 @@ body {
 .offers{
   margin-bottom: 5rem;
   display: flex;
-  width: 53%;
-  height: 60%;
+  width: 45%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -518,7 +517,6 @@ a{
   display: block;
   width: 60%;
   margin-bottom: 3rem;
-  height: 30%;
   }
  
   #about{
@@ -578,11 +576,11 @@ a{
   background-size: contain;
   background-repeat: repeat-y;
 }
-  body{
+body{
     background-attachment:scroll;
     background-color: black;
     background-image: none;
-   
+
   }
   .social-links li a {
     width: 4rem;
