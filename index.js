@@ -31,4 +31,12 @@ window.addEventListener('scroll', () => {
     
       }
 });
+// Get the flipper element
+var flipper = document.querySelector('.flipper');
+
+// Add a click event listener to the flipper
+flipper.addEventListener('click', function () {
+  // Toggle the 'flipped' class on the flipper
+  flipper.classList.toggle('flipped');
+});
 
