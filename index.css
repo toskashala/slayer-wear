@@ -507,7 +507,7 @@ a{
   #about{
     background-image: none;
     background-color: black;
-    width: 80%;
+    width: 100%;
   }
   header{
     background-image: url(img/cropped.jpg);
