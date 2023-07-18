@@ -523,11 +523,23 @@ a{
   height: 30%;
   margin-bottom: 3rem;
   }
-
- 
-  #about{
+#about{
+    background-image: none;
+    background-color: black;
     width: 80%;
   }
+  header{
+    background-image: url(img/cropped.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+#clothes{
+  background-image: url(img/Mirage.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 
   body{
     font-size: 14px;
