@@ -512,18 +512,7 @@ a{
   .offers{
   width: 90%;
   }
-
-}
-
-@media only screen and (max-width: 750px) {
- 
-  .offers{
-  display: block;
-  width: 60%;
-  height: 30%;
-  margin-bottom: 3rem;
-  }
-#about{
+  #about{
     background-image: none;
     background-color: black;
     width: 80%;
@@ -540,6 +529,20 @@ a{
   background-size: cover;
 }
 
+
+}
+
+@media only screen and (max-width: 750px) {
+ 
+  .offers{
+  display: block;
+  width: 60%;
+  height: 30%;
+  margin-bottom: 3rem;
+  }
+#about{
+    width: 80%;
+}
 
   body{
     font-size: 14px;
