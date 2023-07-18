@@ -510,6 +510,10 @@ a{
     background-color: black;
     width: 100%;
   }
+  body{
+  background-color: black;
+    background-image: none;
+  }
   header{
     background-image: url(img/cropped.jpg);
     background-size: cover;
@@ -541,9 +545,6 @@ a{
   height: 30%;
   margin-bottom: 3rem;
   }
-#about{
-    width: 80%;
-}
 
   body{
     font-size: 14px;
